@@ -1,0 +1,15 @@
+<div class = "input-B">
+    <form>
+      <mat-form-field appearance = "legacy" class = "input-B-container" >
+        <mat-label>Movie B</mat-label>
+        <input matInput type = "text" [(ngModel)] = "movieB" name = "somethingRequired" >
+      </mat-form-field>
+    </form>
+    <button mat-flat-button color = "primary" (click)="movieSearchB()">Search</button>
+    <div *ngIf = "responseData" class = "displaying-data">
+      <mat-card *ngFor = "let data of finalDataArr" class = "input-B-cards">
+        <mat-card-title class = "all-title"><strong>{{data.Source | uppercase }}</strong></mat-card-title>
+        <mat-card-content class = "all-content">{{data.Value}}</mat-card-content>
+      </mat-card>
+    </div>
+  </div>

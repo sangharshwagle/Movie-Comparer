@@ -1,0 +1,20 @@
+<div class = "input-A">
+  <form>
+    <mat-form-field appearance = "legacy">
+      <mat-label>Movie A</mat-label>
+      <input matInput type = "text" [(ngModel)] = "movieA" name = "somethingRequired">
+    </mat-form-field>
+  </form>
+  <button mat-flat-button color = "primary" (click)="movieSearchA()">Search</button>
+  <div *ngIf = "responseData" class = "displaying-data">
+    
+      <mat-card *ngFor = "let data of finalDataArr" class = "input-A-cards">
+        <mat-card-title class = "all-title"><strong>{{data.Source | uppercase }}</strong></mat-card-title>
+        <mat-card-content class = "all-content">{{data.Value}}</mat-card-content>
+      </mat-card>
+    </div> 
+  
+</div>
+
+
+<!--<div *ngFor = "let data of finalDataArr">{{data.Source}}: {{data.Value}}</div>-->

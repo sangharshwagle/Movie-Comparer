@@ -1,0 +1,14 @@
+<form class = "sign-up-form" [formGroup] = "signUpForm" (ngSubmit) = "onSubmit()">
+  <mat-form-field appearance="legacy" >
+    <input matInput placeholder = "UserName" formControlName = "userName">
+  </mat-form-field>
+  <mat-form-field appearance="legacy">
+    <input   matInput placeholder = "Email" formControlName = "email">
+  </mat-form-field>
+  <mat-form-field appearance="legacy">
+    <input matInput placeholder = "Password" formControlName = "password">
+  </mat-form-field>
+  <mat-form-field appearance="legacy">
+      <input  matInput placeholder = "Re-Password" formControlName = "rePassword">
+  </mat-form-field>
+</form>

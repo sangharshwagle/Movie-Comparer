@@ -1,0 +1,13 @@
+.sign-up-form{
+    display: flex;
+    flex-direction: column;
+}
+.sign-up-form input{
+    background-color:rgb(252, 190, 74);
+    border-radius: 10px;
+    height: 30px;
+}
+.sign-up-form mat-form-field{
+    width:90%;
+    margin-left:20px;
+}

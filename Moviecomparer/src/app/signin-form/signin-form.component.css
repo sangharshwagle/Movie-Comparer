@@ -1,0 +1,16 @@
+.sign-in-form{
+    display: flex;
+    flex-direction: column;
+}
+.sign-in-form input{
+    background-color:rgb(252, 190, 74);
+   
+    border-radius: 10px;
+    height: 30px;
+    
+} 
+.sign-in-form mat-form-field{
+    width:90%;
+    margin-left:20px;
+    margin-top:5px;
+}

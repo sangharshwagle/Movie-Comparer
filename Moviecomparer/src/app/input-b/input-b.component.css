@@ -1,0 +1,25 @@
+.input-B-container{
+    background-color: white;
+    opacity: 0.8;
+}
+.input-B{
+    width: 100%;
+    text-align: center;
+}
+.all-content{
+    word-wrap: break-word;
+    font-family: Roboto;
+    font-size: 16px;
+    color:rgb(226, 169, 25);
+}
+.all-title{
+    font-family: Montserrat; 
+}
+.displaying-data{
+    margin:10px;
+}
+.input-B-cards{
+    margin: 4px;
+    border: solid 1px lightblue;
+    background-color: rgb(253, 246, 246);
+}

@@ -1,0 +1,12 @@
+<form [formGroup] = "form" class = "sign-in-form">
+    <mat-form-field appearance = "legacy">
+      <input formControlName = "username" matInput placeholder="  Username" color = "primary" >
+      <mat-error *ngIf = "form.get('username').touched && !form.get('username').hasError('NoSpaceAllowed')"> Username is <strong>required</strong>
+      </mat-error>
+      <mat-error *ngIf = "form.get('username').hasError('NoSpaceAllowed')">No space allowed</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance = "legacy">
+        <input formControlName = "password" matInput placeholder="  Password" >
+        <mat-error *ngIf = "form.get('password').touched && form.get('password').invalid">You must enter a value</mat-error>
+    </mat-form-field>
+</form>

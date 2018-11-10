@@ -1,0 +1,75 @@
+.home{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.699),
+        rgba(0, 0, 0, 0.699)
+        ),
+        url(../../assets/images/movie-background.jpg);
+   
+}
+.film{
+   grid-column: 2/3;
+   grid-row: 2/3; 
+   min-width: 100%;
+   max-width: 100%;
+   min-height: 100%;
+   max-height: 100%;
+   border-radius:50px;
+   filter: brightness(35%);
+   border: 1px solid black;
+   opacity:0.90;
+}
+.logo-image-container{
+    grid-row: 1/2;
+    grid-column: 3/4;
+    justify-self: end;
+}
+
+.buttons-container{
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-top: 20px;
+    align-self: start;
+    justify-content: space-between;
+}
+.click-me{
+    color: blue;
+    background-color: black;
+    font-family: Monoton;
+    letter-spacing: 3px;
+    opacity: 0.80;
+    border: 0.5px solid blue;
+    border-radius: 25px;
+    font-size: 20px;
+}
+.left{
+    background-color: black;
+    color:blue;
+    opacity: 0.80;
+    border: 0.5px solid blue;
+    border-radius: 25px;
+    transform: translateX(15px);
+}
+.right{
+    background-color: black;
+    color:blue;
+    opacity: 0.80;
+    border: 0.5px solid blue;
+    border-radius: 25px;
+    transform: translateX(-15px); 
+}
+.left:hover{
+    transform: translateX(-5px);
+}
+.right:hover{
+    transform: translateX(5px);
+}
+
+

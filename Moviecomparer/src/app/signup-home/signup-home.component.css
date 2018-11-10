@@ -1,0 +1,70 @@
+.main-page{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.699),
+        rgba(0, 0, 0, 0.699)
+        ),
+        url(../../assets/images/movie-background.jpg);
+}
+.box-container{
+    width: 33.33%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.signup-form{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 20px;
+    border:0.5px solid blue;
+    opacity:0.8;
+}
+.sign-up{
+    width: 40%;
+    color: blue;
+    background-color: black;
+    font-size: 20px;
+    font-family: Monoton;
+    letter-spacing: 3px;
+    opacity: 0.80;
+    border: 0.5px solid blue;
+    border-radius: 25px;
+    line-height: 50%;
+}
+.buttons-container{
+    margin-top: 10px;
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    height: 40px;
+}
+button.right{
+    background-color: black;
+    color:blue;
+    opacity:0.8;
+    border-radius:20px;
+    border:0.5px solid blue;
+    transform: translateX(-20px);
+}
+.right mat-icon{
+    margin-bottom:10px;
+}
+button.right:hover{
+    transform: translateX(2px);
+    transition: 0.5s;
+}
+.logo-container{
+    display: flex;
+    position: fixed;
+    right:0px;
+    top:0px;
+}
