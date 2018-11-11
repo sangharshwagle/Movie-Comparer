@@ -14,6 +14,10 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  enterMainPage(): void {
+    this._router.navigate(['./main'])
+  }
+
   rightClick(): void {
     this._router.navigate(['/signinhome']);
   }
