@@ -19,6 +19,8 @@ export class SigninFormComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+  submitButton(){
+    console.log(`this button was clicked`);
+  }
 
 }

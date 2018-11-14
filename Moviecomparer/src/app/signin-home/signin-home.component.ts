@@ -1,5 +1,5 @@
 import { SigninFormComponent } from './../signin-form/signin-form.component';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 
@@ -11,6 +11,8 @@ import { Router } from '@angular/router';
 })
 export class SignInHomeComponent implements OnInit {
 
+  @ViewChild(SigninFormComponent) signIn: SigninFormComponent
+
   constructor(private _router: Router) { }
 
   ngOnInit() {
@@ -18,5 +20,8 @@ export class SignInHomeComponent implements OnInit {
 
   leftClick(): void {
     this._router.navigate(['/home']);
+  }
+  callingSubmitButton(){
+    this.signIn.submitButton();
   }
 }

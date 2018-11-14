@@ -1,3 +1,4 @@
+import { SignUpService } from '../service/signup-form-service.service';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 
@@ -16,13 +17,20 @@ export class SignupFormComponent implements OnInit {
     rePassword: new FormControl('')
   });
 
-  constructor() { }
+  constructor(private _SignupService: SignUpService) { 
 
-  onSubmit(){
-    console.log(this.signUpForm.value);
   }
-
   ngOnInit() {
+  }
+  submitButton(){
+    const data = {
+      username: this.signUpForm.get('userName').value,
+      email: this.signUpForm.get('email').value,
+      password: this.signUpForm.get('password').value,
+      rePassword: this.signUpForm.get('rePassword').value,
+    };
+    this._SignupService.addSignUp(data);
+    this.signUpForm.reset();
   }
 
 }

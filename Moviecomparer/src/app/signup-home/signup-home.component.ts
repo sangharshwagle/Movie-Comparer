@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { SignupFormComponent } from './../signup-form/signup-form.component';
+
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-signup-home',
@@ -8,6 +11,8 @@ import { Router } from '@angular/router';
 })
 export class SignupHomeComponent implements OnInit {
 
+  @ViewChild(SignupFormComponent) signUp: SignupFormComponent;
+
   constructor(private _router:Router) { }
 
   ngOnInit() {
@@ -15,5 +20,8 @@ export class SignupHomeComponent implements OnInit {
 
   rightClick(): void{
     this._router.navigate(['/home']);
+  }
+  callingSubmitButton(){
+    this.signUp.submitButton();
   }
 }

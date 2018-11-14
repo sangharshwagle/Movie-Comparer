@@ -1,3 +1,4 @@
+import { SignUpService } from './service/signup-form-service.service';
 import { SecretKeys } from './secret/secret.service';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MatCardModule } from '@angular/material/card';
@@ -28,6 +29,7 @@ import { InputBComponent } from './input-b/input-b.component';
 
 import { MainComponent } from './main/main.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PracticeComponent } from './practice/practice.component';
 
 
 
@@ -46,7 +48,8 @@ import { HttpClientModule } from '@angular/common/http';
     InputAComponent,
     InputBComponent,
     MainComponent,
-    NavbarComponent
+    NavbarComponent,
+    PracticeComponent
 
   ],
   imports: [
@@ -64,7 +67,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatListModule
 
   ],
-  providers: [MovieService, SecretKeys],
+  providers: [MovieService, SecretKeys, SignUpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
